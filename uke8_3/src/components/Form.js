@@ -10,17 +10,28 @@ export default function Form() {
   const handleCommentChange = (event) => {
     setComment(event.target.value)
   }
+<<<<<<< HEAD
   const addComment = (event) => {
     event.preventDefault()
     setLoading(true)
 
+=======
+
+  const addComment = (event) => {
+    event.preventDefault()
+    setLoading(true)
+>>>>>>> db6f002486db7dba35aae050636f36abf3144b37
     setTimeout(() => {
       setSuccess(true)
       setLoading(false)
       navigate('/produkter')
     }, 2000)
+<<<<<<< HEAD
 
     console.log(comment)
+=======
+    // console.log(comment)
+>>>>>>> db6f002486db7dba35aae050636f36abf3144b37
   }
 
   return (
@@ -37,7 +48,11 @@ export default function Form() {
           value={comment}
         />
       </label>
+<<<<<<< HEAD
       <button type="submit">{loading ? 'Sender...' : 'Send'}</button>
+=======
+      <button type="submit">{loading ? 'Sender ...' : 'Send'}</button>
+>>>>>>> db6f002486db7dba35aae050636f36abf3144b37
       {success ? <p>Kommentar sendt</p> : null}
     </form>
   )

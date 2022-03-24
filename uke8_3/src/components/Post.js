@@ -13,11 +13,17 @@ export default function Post({ id, title, body }) {
     const data = await response.json()
     setPost(data.body)
   }
+<<<<<<< HEAD
 
   // const showMore = () => {
   //   setShow(!show)
   // }
 
+=======
+  // const showMore = () => {
+  //   setShow(!show)
+  // }
+>>>>>>> db6f002486db7dba35aae050636f36abf3144b37
   return (
     <article>
       <h3>{title}</h3>

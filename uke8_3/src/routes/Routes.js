@@ -10,7 +10,11 @@ export default function PageRoutes() {
     <>
       <Navigation />
       <Routes>
+<<<<<<< HEAD
         <Route path="home" element={<Home />} />
+=======
+        <Route path="hjem" element={<Home />} />
+>>>>>>> db6f002486db7dba35aae050636f36abf3144b37
         <Route path="produkter">
           <Route index element={<Products />} />
           <Route path=":id" element={<Product />} />
